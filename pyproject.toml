@@ -1,0 +1,23 @@
+[project]
+name = "multi-agent-acl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhishek Kalia", email = "abhishek@bitdecentro.net" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=0.3.30",
+    "langchain-openai>=0.3.35",
+    "streamlit>=1.50.0",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+multi-agent-acl = "multi_agent_acl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
